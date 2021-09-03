@@ -3,17 +3,19 @@ x = 10
 y = -10
 
 #비교 연산 
-print(x > 0)
-print(y > 0)
+print(x > 0)  #True
+print(y > 0)  #False
 print()  #한 줄 공백 
 
-print(x > y)
-print(x < y)
+print(x > y)  #True
+print(x < y)  #False
 print()
 
-print(x == 10)  #True
-print(x == y)   #False
-print(x != y)   #True
+print(x == 10)     #True
+print(x == y)      #False
+print(x != y)      #True
+print(x is y)      #False
+print(x is not y)  #True
 print()
 
 #논리 연산자
