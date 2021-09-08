@@ -28,4 +28,5 @@ t.speed(3)
 for i in range(500, 0, -5):
     t.forward(i)
     t.right(90)
-    
+
+t.mainloop()
