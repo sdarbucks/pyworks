@@ -14,16 +14,16 @@ for i in score:
 print()
 
 print("for ~ in range() 반복문")
-#n = len(score)
-for i in range(0, len(score)):
+n = len(score)
+for i in range(0, n):
     if score[i] >= 60:
         print(str(i+1) + "번 학생은 합격입니다.")
     else:
         print(str(i+1) + "번 학생은 불합격입니다.")
-
-# 성적의 합계 
+    
+# 성적의 합계, 평균
 total = 0
-avg = 0.1
+avg = 0.0
 for i in score:
     total += i
 
@@ -32,7 +32,6 @@ avg = total / len(score)
 
 print("합계 : " + str(total) + "점")
 print("평균 : " + str(avg) + "점")
-
 
 
 

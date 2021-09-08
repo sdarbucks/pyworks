@@ -1,5 +1,5 @@
 # 문자열 - 특별한 1차원 리스트
-# 문자열 인덱싱, 슬라이싱 
+# 문자열 인덱싱, 슬라이싱
 say = "Have a nice day!"
 print(say[0])
 print(say[:4])
