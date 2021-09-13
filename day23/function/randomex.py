@@ -14,7 +14,7 @@ print(rand2)
 
 # 문자 추출 - random.choice()
 fruit = ['포도', '딸기', '사과']
-rnd = math.floor(random.random() * len(fruit))  # 0~2
+#rnd = math.floor(random.random() * len(fruit))  # 0~2
 #print(rnd)
 #print(fruit[rnd])
 print(random.choice(fruit))
