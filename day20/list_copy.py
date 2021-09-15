@@ -26,7 +26,6 @@ for i in li2:
     print(i)
 print()
 
-
 # 짝수만 저장
 for i in li:
     if i % 2 == 0:

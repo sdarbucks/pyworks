@@ -1,4 +1,3 @@
-
 # 터틀런 게임 만들기
 import random
 import turtle as t
@@ -17,10 +16,9 @@ def turn_down():
 
 def play():
     t.forward(10) #주인공 거북이의 이동 거리
-    te.forward(9) #적 거북이의 이동 거리
-    ang = te.towards(t.pos())  #주인공 거북이 위치를 쫓아가는 적 거북이
+    te.forward(9) # 적 거북이의 이동 거리
+    ang = te.towards(t.pos())  #주인공 거북이 위치를 쫒아가는 적 거북이
     te.setheading(ang)
-
 
     # 적 거북이가 주인공 거북이에게 닿으면 게임 종료
     if t.distance(te) >= 12:
@@ -33,7 +31,7 @@ def play():
         tf.goto(x, y)
 
 # 적 거북이
-te = t.Turtle()  #Turtle 클래스의 생성자
+te = t.Turtle()  #Turtle() 클래스의 생성자
 te.shape('turtle')
 te.color('red')
 te.speed(0)

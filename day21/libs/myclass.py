@@ -11,7 +11,6 @@ class Student:
     def __str__(self):  #객체의 정보 출력
         return "이름 : {0}, 학년 : {1}".format(self.name, self.grade)
 
-
 # 자동차 클래스
 class Car:
     def __init__(self, model, color, cc):
@@ -37,8 +36,8 @@ class Employee:
     serial_num = 1000  #기준번호 - 클래스 변수
 
     def __init__(self, name):
-        Employee.serial_num += 1    #1증가
-        self._empid = Employee.serial_num    #사원 번호
+        Employee.serial_num += 1    # 1증가
+        self._empid = Employee.serial_num           #사원 번호
         self._name = name
 
     def getempid(self):
@@ -46,3 +45,12 @@ class Employee:
 
     def getname(self):
         return self._name
+
+
+
+
+
+
+
+
+

@@ -9,3 +9,4 @@ print(name + "님 환영합니다.")
 # age - 계산할때 str(age)로 해야함.
 age = input("나이를 입력하세요: ")
 print("당신의 나이는 " + age + "세이군요!")
+

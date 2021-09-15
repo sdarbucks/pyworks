@@ -1,9 +1,8 @@
 # 여러개의 원 그리기
-
 import turtle as t
 
 n = 50
-t.speed(0)  #최고 속도 (0~10)
+t.speed(0)  #최고 속도 (1~10)
 t.bgcolor('black')
 t.color('green')
 for x in range(n):

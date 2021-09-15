@@ -17,6 +17,6 @@ for i in li:
     total += i
 
 avg = total / len(li)
-print("개수 :", len(li), "개")
+print("개수 :", len(li))
 print("합계 :", total)
 print("평균 :", avg)

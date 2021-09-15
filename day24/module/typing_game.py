@@ -17,11 +17,11 @@ n = 1   #문제 번호
 print("[타자 게임] 준비되면 엔터!")
 input()
 start = time.time()
-while  n < 11:
+while n < 11:
     print('-문제', n)
-    q = random.choice(word)   #문제
+    q = random.choice(word)  #문제
     print(q)
-    u = input()   # 사용자가 입력
+    u = input()  # 사용자가 입력
     # 논리 연산 코드 작성
     if q == u:
         print("통과!")
@@ -31,3 +31,5 @@ while  n < 11:
 end = time.time()
 et = end - start
 print("타자 시간 : %.2f초" % et)
+
+

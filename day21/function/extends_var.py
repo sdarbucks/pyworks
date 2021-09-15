@@ -9,10 +9,14 @@ def merge_text(*text):
 # 숫자를 더해서 평균을 계산하는 함수
 def calc_avg(*x):
     total = 0
-    for i in x:    #for i in (1, 2, 3, 4) 튜플
+    for i in x:      #for i in (1, 2, 3, 4) 튜플
         total += i
-    avg = total / len(x)    # 개수 세는 함수 - len(x)
+    avg = total / len(x) # 개수 세는 함수 - len(x)
     return avg
+
+# 제곱수 계산하는 함수 정의
+def square(x):
+    return x * x
 
 if __name__ == "__main__":
     # 문자열 더하기

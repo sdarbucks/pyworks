@@ -1,3 +1,4 @@
+
 from classlib.converter import ScaleConverter
 
 #ScaleConverter를 상속한 Converters 클래스 정의
@@ -11,5 +12,5 @@ class Converters(ScaleConverter):
         return super().convert(val) + self.factor2
 
 conv = Converters('C', 'F', 1.8, 32)
-print("== 20C를 화씨로 변환 ==")
+print("23C를 화씨 온도로 변환")
 print(str(conv.convert(23)) + conv.units_to)

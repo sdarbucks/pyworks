@@ -1,6 +1,6 @@
 # AirPlane 클래스
 class AirPlane:
-    #기본 생성자는 생략 가능
+    # 기본 생성자는 생략 가능
     # def __init__(self):
     #     pass
 
@@ -14,11 +14,11 @@ class AirPlane:
         print("비행기가 착륙합니다.")
 
 class SuperSonicPlane(AirPlane):
-    NORMAL= 1         # 상수는 관례상 대문자 표기
+    NORMAL = 1          # 상수는 관례상 대문자 표기
     SUPERSONIC = 2
 
     def __init__(self):
-        self.flymode = SuperSonicPlane.NORMAL   # 상수도 클래스 이름으로 접근
+        self.flymode = SuperSonicPlane.NORMAL  # 상수도 클래스 이름으로 접근
 
     def fly(self):
         if self.flymode == SuperSonicPlane.SUPERSONIC:
@@ -34,25 +34,3 @@ sa.fly()
 sa.flymode = SuperSonicPlane.NORMAL
 sa.fly()
 sa.land()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""
-plane1 = Airplane()
-plane1.takeoff()
-plane1.fly()
-plane1.land()
-"""

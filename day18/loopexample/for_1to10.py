@@ -7,15 +7,15 @@ for i in range(1, 11, 1):
 print()
 
 # 0 ~ 9 출력 : 초기값이 없는 경우 0부터 시작임 
-for i in range(10):
+for i in range(10):  
     print(i, end=" ")
 
 print()
 
 # 1 ~ 10 중 홀수 출력 
 for i in range(1, 11, 2):
-    print(i, end=" ")
-
+    print(i, end = " ")
+    
 print()
 # 1 ~ 10 중 홀수 출력
 for i in range(1, 11, 1):

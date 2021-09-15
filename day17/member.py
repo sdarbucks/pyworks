@@ -9,6 +9,7 @@ phone = "010-1234-5678"
 print("아이디 : " + userid)
 print("비밀번호 : " + userpw)
 print("이름 : " + name)
-print("나이 : " + str(age))  # 숫자 -> 문자로 변경 str(숫자)
+print("나이 : " + str(age))   # 숫자 -> 문자로 변경 str(숫자)로 표기
 print("이메일 : " + email)
 print("전화번호 : " + phone)
+

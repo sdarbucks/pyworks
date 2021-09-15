@@ -11,3 +11,4 @@ print(calc_avg(1, 2, 3, 4, 5))
 # square 호출
 print(square(5))
 print(square(6))
+

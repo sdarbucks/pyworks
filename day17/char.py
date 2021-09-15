@@ -4,10 +4,10 @@
 say = "'힘내세요!' 라고 말했습니다."
 print(say)
 
-say2 = '"Python is very easy." he says'
+say2 = '"Python is very easy." he says.'
 print(say2)
 
-#문자열 곱하기 
+# 문자열 곱하기
 print("=" * 30)
 
 # 여러 줄로 출력하기 - 쌍따옴표 또는 홑따옴표를 3개 사용
@@ -18,6 +18,8 @@ song1 = '''
 남산위에 저 소나무 철갑을 두른 듯
 바람 서리 불변함은 우리 기상 일세.
 '''
-
 print(song1)
-print("-" * 40)
+print('-' * 40)
+
+
+

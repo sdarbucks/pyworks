@@ -17,4 +17,6 @@ fruit = ['포도', '딸기', '사과']
 #rnd = math.floor(random.random() * len(fruit))  # 0~2
 #print(rnd)
 #print(fruit[rnd])
-print(random.choice(fruit))
+f = random.choice(fruit)
+print(f)
+

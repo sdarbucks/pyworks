@@ -14,3 +14,4 @@ print("\t  모델명\t색상\t   배기량")
 print("차량1 " + car1.model + '\t' + car1.color + '\t ' + str(car1.cc))
 print("차량2 " + car2.model + '\t' + car2.color + '\t ' + str(car2.cc))
 """
+

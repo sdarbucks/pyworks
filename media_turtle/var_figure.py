@@ -10,7 +10,7 @@ t.pensize(2)
 for i in range(n):
     t.forward(d)
     t.right(360/n)
-
+    
 #삼각형
 n = 3
 t.color("blue")
@@ -22,11 +22,5 @@ for i in range(n):
 #원
 t.color("red")
 t.circle(100)  #반지름이 50px
-
-
-t.speed(3)
-for i in range(500, 0, -5):
-    t.forward(i)
-    t.right(90)
 
 t.mainloop()
