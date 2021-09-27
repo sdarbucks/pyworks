@@ -26,5 +26,5 @@ def select_book():
     conn.close()
 
 
-insert_book()
-# select_book()
+# insert_book()
+select_book()
