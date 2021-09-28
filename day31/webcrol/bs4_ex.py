@@ -18,14 +18,12 @@ html_str = """
     </body>
 </html>
 """
-
+# find('태그이름'), select_one('태그이름.클래스이름')
 html = BeautifulSoup(html_str, "html.parser")
-ul = html.find('ul', {'class':'lang'})  # 딕셔너리 구조{선택자:값}
-# print(ul)
-# print(ul.text)
-li = ul.find('li')  # 첫 요소만 찾음
-# print(li.text)
-
-all_li = ul.findAll('li')
-print(all_li)
-print(all_li[2].text)
+# first_ul = html.find('ul')  # find() 첫 요소를 찾음
+first_ul = html.select_one('ul.item')
+second_ul = html.select_one('ul.lang')
+# print(first_ul)
+# print(first_ul.text)
+print(second_ul)
+print(second_ul.text)
