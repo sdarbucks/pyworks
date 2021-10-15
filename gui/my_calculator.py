@@ -2,7 +2,17 @@
 from tkinter import *
 
 def click(key):
-    display.insert(END, key)
+    if key == 'C':
+        display.delete(0, END)  # 첫번째 문자(0.0 - 첫줄.첫문자)
+    elif key == '=':
+        try:
+            value = eval(display.get()) # 계산된 숫자
+            result = str(value)[0:6] # 출력할 때 문자로 변환
+            display.insert(END, '=' + result)
+        except:
+            display.insert(END, "-->오류")
+    else:
+        display.insert(END, key)
 
 root = Tk()
 root.title("나의 계산기")
@@ -37,5 +47,22 @@ for btn_txt in num_pad_list:
 # 연산자 버튼 프레임
 operator = Frame(root)
 operator.grid(row=1, column=1, sticky=E)
+operator_list = [
+    '*', '/',
+    '+', '-',
+    '(', ')',
+    'C'
+]
+r = 0
+c = 0
+for btn_txt in operator_list:
+    def cmd(x=btn_txt):
+        click(x)
+
+    Button(operator, text=btn_txt, width=5, command=cmd).grid(row=r, column=c)
+    c = c + 1
+    if c > 2:
+        c = 0
+        r = r + 1
 
 root.mainloop()
